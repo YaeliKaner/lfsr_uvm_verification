@@ -99,15 +99,6 @@ class lfsr_reference_model extends uvm_component;
             else
                 expected_item.data_out = active_data_in.data_in ^ LFSR_REG_REF; // OLD LFSR
 
-            `uvm_info("REF_DEBUG",
-                $sformatf("data_in=%0h lfsr=%0h bypass=%0b seed_load=%0b result=%0h",
-                    active_data_in.data_in,
-                    LFSR_REG_REF,
-                    control_item.bypass_enable,
-                    control_item.seed_load,
-                    expected_item.data_out),
-                UVM_LOW)
-
             if (control_item.seed_load)
                 LFSR_REG_REF = control_item.seed_value;
             else
