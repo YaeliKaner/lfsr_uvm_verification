@@ -2,7 +2,6 @@ class base_test extends uvm_test;
 
   `uvm_component_utils(base_test)
 
-
   // 1. control sequences
   sanity_control_seq    sanity_control_seq_i;
   bypass_control_seq    bypass_control_seq_i;
