@@ -17,4 +17,4 @@ The UVM testbench is structured to ensure comprehensive functional coverage and 
 ## How to Run
 To run the simulation, navigate to the `run` directory and execute:
 ```bash
-make run
+xrun -f run.f -uvm
